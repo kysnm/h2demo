@@ -1,17 +1,17 @@
 source 'https://rubygems.org'
 
-#gem 'rails', path: "/Users/aaron/git/rails"
-gem 'rails', github: "tenderlove/rails", :branch => 'rack2'
-gem 'sprockets-rails', github: "rails/sprockets-rails"
+gem 'rails', github: "kysnm/rails", :branch => 'rack2'
 gem 'arel', github: "rails/arel"
 gem 'rack', github: "tenderlove/rack", :branch => 'rack2'
 gem 'sprockets', github: "tenderlove/sprockets", :branch => 'rack2'
 gem 'sprockets-rails', github: "tenderlove/sprockets-rails", :branch => 'rack2'
 
+gem 'ds9', github: "tenderlove/ds9"
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', github: "rails/sass-rails"
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -34,3 +34,9 @@ gem 'jbuilder', '~> 2.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+group :development do
+  gem 'pry'
+  gem 'pry-doc'
+  gem 'pry-byebug'
+end
